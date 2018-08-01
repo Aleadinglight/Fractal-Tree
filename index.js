@@ -1,18 +1,18 @@
 var angle=0;
 
 function setup() {
-    var canvas = createCanvas(900, 900);
+    var canvas = createCanvas(700, 700);
     // Move the canvas so it’s inside our <div id="sketch-holder">.
     canvas.parent('sketch-holder');
-    frameRate(500);
+    frameRate(60);
 }
 
 function draw(){
     background(51);
-    angle = angle+0.01;
+    angle = angle+0.009;
     stroke(255);
     translate(width/2,height);
-    branch(250);
+    branch(200);
 }
 
 function branch(len){
