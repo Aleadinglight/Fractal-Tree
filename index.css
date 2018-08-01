@@ -1,0 +1,10 @@
+html,body{
+    background-color: #333333;
+}
+
+#sketch-holder{
+    margin:0 auto;
+    width: 900px;
+    height:90vh;
+    vertical-align: middle;
+}
