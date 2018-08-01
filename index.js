@@ -1,16 +1,15 @@
-var slider=0;
 var angle=0;
 
 function setup() {
     var canvas = createCanvas(700, 700);
     // Move the canvas so it’s inside our <div id="sketch-holder">.
     canvas.parent('sketch-holder');
-    slider = createSlider(0, TWO_PI, PI/4, 0.01);
+    frameRate(500);
 }
 
 function draw(){
     background(51);
-    angle = slider.value();
+    angle = angle+0.005;
     stroke(255);
     translate(width/2,height);
     branch(200);
